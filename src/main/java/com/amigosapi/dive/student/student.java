@@ -7,13 +7,13 @@ import java.time.LocalDate;
 public class student {
 @Id
      @SequenceGenerator(
-             name = "deep-dive-spring",
-             sequenceName = "deep-dive-spring",
+             name = "deep-dive-spring_sequence",
+             sequenceName = "deep-dive-spring_sequence",
              allocationSize = 1
      )
      @GeneratedValue(
              strategy = GenerationType.SEQUENCE,
-             generator = "deep-dive-spring"
+             generator = "deep-dive-spring_sequence"
             )
 
     private long id;
