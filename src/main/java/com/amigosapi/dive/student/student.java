@@ -1,8 +1,20 @@
 package com.amigosapi.dive.student;
 
+import javax.persistence.*;
 import java.time.LocalDate;
-
+@Entity
+@Table
 public class student {
+@Id
+     @SequenceGenerator(
+             name = "deep-dive-spring",
+             sequenceName = "deep-dive-spring",
+             allocationSize = 1
+     )
+     @GeneratedValue(
+             strategy = GenerationType.SEQUENCE,
+             generator = "deep-dive-spring"
+            )
 
     private long id;
     private String name;
