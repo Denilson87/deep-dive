@@ -74,4 +74,15 @@ public class student {
     public void setDob(LocalDate dob) {
         this.dob = dob;
     }
+
+    @Override
+    public String toString() {
+        return "student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", age=" + age +
+                ", dob=" + dob +
+                '}';
+    }
 }
