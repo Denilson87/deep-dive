@@ -1,7 +1,6 @@
 package com.amigosapi.dive.student;
 
-import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface studentRepository extends JpaRepository {
+public interface StudentRepository extends J{
     
 }

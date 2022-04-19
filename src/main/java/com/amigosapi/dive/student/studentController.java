@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(path = "api/vi/student")
-public class studentController {
+public class StudentController {
 
-    private final StudentService studentService;
+    private final StudentService StudentService;
     @Autowired
-    public studentController(StudentService studentService) {
-        this.studentService = studentService;
+    public StudentController(StudentService studentService) {
+        this.StudentService = studentService;
     }
 
 }
