@@ -13,7 +13,7 @@ public class student {
      )
      @GeneratedValue(
              strategy = GenerationType.SEQUENCE,
-             generator = "student_sequence"
+             generator = "deep-dive-spring_sequence"
             )
 
     private long id;
