@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 @Entity
 @Table
-public class student {
+public class Student {
 @Id
      @SequenceGenerator(
              name = "student_sequence",
@@ -22,10 +22,10 @@ public class student {
     private Integer age;
     private LocalDate dob;
 
-    public student() {
+    public Student() {
     }
 
-    public student(long id,
+    public Student(long id,
                    String name,
                    String email,
                    Integer age,
@@ -37,7 +37,7 @@ public class student {
         this.dob = dob;
     }
 
-    public student(String name,
+    public Student(String name,
                    String email,
                    Integer age,
                    LocalDate dob) {
